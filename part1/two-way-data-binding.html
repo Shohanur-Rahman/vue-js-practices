@@ -9,7 +9,7 @@
     <p>
         <input type="text" v-model="name">
         <br/>
-        <h1>Your name is  {{name}}</h1>
+    <h1>Your name is {{name}}</h1>
     </p>
 </div>
 
@@ -20,8 +20,11 @@
 
     var app = new Vue({
         el: "#root",
-        data:{
+        data: {
             name: "Hello World"
+        },
+        mounted: function () {
+            console.log("Hello Mounted.");
         }
     });
 </script>
