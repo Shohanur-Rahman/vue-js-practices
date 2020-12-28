@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue Title</title>
+</head>
+<body>
+
+<div id="root">
+    <p>
+        <input type="text" v-model="name">
+        <br/>
+        <h1>Your name is  {{name}}</h1>
+    </p>
+</div>
+
+
+<script type="text/javascript" src="assets/vue.js"></script>
+
+<script type="text/javascript">
+
+    var app = new Vue({
+        el: "#root",
+        data:{
+            name: "Hello World"
+        }
+    });
+</script>
+
+</body>
+</html>
